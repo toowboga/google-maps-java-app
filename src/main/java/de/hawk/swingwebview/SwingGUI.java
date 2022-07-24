@@ -67,12 +67,12 @@ public class SwingGUI {
         webView = new WebView();
         // load home page
         webView.getEngine().load(HOME);
-        // add webview on jfxPanel
+        // add webView on jfxPanel
         jfxPanel.setScene(new Scene(webView));
     }
 
     private void showHAWK() {
-        // load HAWK location if webview is initialized
+        // load HAWK location if webView is initialized
         if (webView != null) {
             webView.getEngine().load(HAWK_GOETTINGEN_ING);
         }

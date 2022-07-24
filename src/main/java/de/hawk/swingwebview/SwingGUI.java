@@ -59,7 +59,7 @@ public class SwingGUI {
 
     private void hawkButtonListener() {
         // execute method on the JavaFX Application Thread
-        Platform.runLater(this::showHawkGoettingen);
+        Platform.runLater(this::showHAWK);
     }
 
     private void createWebView() {
@@ -71,7 +71,7 @@ public class SwingGUI {
         jfxPanel.setScene(new Scene(webView));
     }
 
-    private void showHawkGoettingen() {
+    private void showHAWK() {
         // load HAWK location if webview is initialized
         if (webView != null) {
             webView.getEngine().load(HAWK_GOETTINGEN_ING);

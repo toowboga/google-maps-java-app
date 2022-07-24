@@ -3,6 +3,7 @@
 Xvfb :99 -screen 0 1200x800x24 +extension GLX +render -noreset -nolisten tcp &
 cd /home/app
 # show version infos
+lsb_release -d
 mvn --version
 java --version
 javac --version

@@ -1,7 +1,7 @@
 FROM maven:3.8.6-eclipse-temurin-17
 
 # Required run-time libraries
-ENV RUNTIME_PACKAGES libxext6 libxrender1 libxtst6 libxi6 libgl1 libgtk-3-0 libasound2
+ENV RUNTIME_PACKAGES libxext6 libxrender1 libxtst6 libxi6 libgl1 libgtk-3-0 libasound2 mesa-utils libgl1-mesa-glx xvfb
 
 # Install libraries
 RUN apt-get update && apt-get install -y $RUNTIME_PACKAGES \

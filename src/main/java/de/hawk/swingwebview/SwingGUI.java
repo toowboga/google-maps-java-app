@@ -40,7 +40,7 @@ public class SwingGUI {
 
         // create button and add listener to show HAWK location in the WebView component
         JButton hawk = new JButton("HAWK Göttingen - Fakultät Ingenieurwissenschaften und Gesundheit");
-        hawk.addActionListener(e -> hawkButtonListener());
+        hawk.addActionListener(e -> buttonListener());
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(hawk);
         frame.getContentPane().add(BorderLayout.SOUTH, buttonPanel);
@@ -57,9 +57,9 @@ public class SwingGUI {
         frame.setVisible(true);
     }
 
-    private void hawkButtonListener() {
+    private void buttonListener() {
         // execute method on the JavaFX Application Thread
-        Platform.runLater(this::showHawkGoettingen);
+        Platform.runLater(this::showHAWK);
     }
 
     private void createWebView() {
@@ -67,12 +67,12 @@ public class SwingGUI {
         webView = new WebView();
         // load home page
         webView.getEngine().load(HOME);
-        // add webview on jfxPanel
+        // add webView on jfxPanel
         jfxPanel.setScene(new Scene(webView));
     }
 
-    private void showHawkGoettingen() {
-        // load HAWK location if webview is initialized
+    private void showHAWK() {
+        // load HAWK location if webView is initialized
         if (webView != null) {
             webView.getEngine().load(HAWK_GOETTINGEN_ING);
         }

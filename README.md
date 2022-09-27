@@ -1,5 +1,5 @@
 # google-maps-java-app
-Java Desktop Application with Swing GUI showing Google Maps using a JavaFX WebView component
+Java Desktop Application with Swing GUI showing Google Maps using a JavaFX WebView component.
 
 ## Getting Started
 
@@ -33,6 +33,6 @@ The easiest way is to execute the `run-script.sh`.
 1. Make sure you have installed Docker and X11 on your machine.
 2. Clone this repository:
 `git clone https://github.com/toowboga/google-maps-java-app.git`
-3. Open a terminal and execute the script `run-script.sh`
+3. Open a terminal and execute the script `run-script.sh`.
 
 Note: The script downloads an image from dockerhub and starts the docker container and is NOT using the sources in this repository!
